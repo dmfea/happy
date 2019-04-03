@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">happy</string>
+    <string name="love">my love</string>
+    <string name="name">liuyijia</string>
+    <string name="inp">please input</string>
+    <string name="change">change</string>
+    <string name="txtout">result</string>
+    <string name="one">+1point</string>
+    <string name="two">+2points</string>
+    <string name="three">+3points</string>
+    <string name="reset">reset</string>
+    <string name="rmb_hint">please input rmb</string>
+    <string name="dollar">dollar</string>
+    <string name="euro">euro</string>
+    <string name="won">won</string>
+</resources>

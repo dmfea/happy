@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">快乐代码</string>
+    <string name="love">我的爱人</string>
+    <string name="name">刘一佳</string>
+    <string name="inp">请输入摄氏温度</string>
+    <string name="change">转换</string>
+    <string name="rmb_hint">请输入人民币</string>
+    <string name="dollar">美元</string>
+    <string name="euro">欧元</string>
+    <string name="won">韩元</string>
+    <string name="one" translatable="false">+1分</string>
+    <string name="reset">清空</string>
+    <string name="three">+3分</string>
+    <string name="two">+2分</string>
+    <string name="txtout">结果为</string>
+</resources>
