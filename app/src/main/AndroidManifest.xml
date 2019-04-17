@@ -11,10 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".ThirdActivity"></activity>
-        <activity android:name=".Third2Activity">
-
-        </activity>
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".Third2Activity"></activity>
         <activity android:name=".RateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ConfigActivity"></activity>
     </application>
 
 </manifest>
