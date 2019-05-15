@@ -140,6 +140,7 @@ public class MyList2Activity extends ListActivity implements Runnable,AdapterVie
                 Log.i(TAG, "对话框事件处理");
                 listItems.remove(position);
                 listItemAdapter.notifyDataSetChanged();
+                //
             }
         }).setNegativeButton("否",null);
         builder.create().show();
