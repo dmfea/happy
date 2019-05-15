@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class Third2Activity extends AppCompatActivity {
     TextView score;
     TextView score2;
+    private final String TAG="Third2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +17,67 @@ public class Third2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_third2);
         score = findViewById(R.id.score);
         score2 = findViewById(R.id.score2);
+        Log.i(TAG,"onCreate");
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String scoreA = ((TextView)findViewById(R.id.score)).getText().toString();
+        String scoreB = ((TextView)findViewById(R.id.score2)).getText().toString();
+
+        Log.i(TAG,"onSaveInstanceState");
+        outState.putString("teamA_score",scoreA);
+        outState.putString("teamB_score",scoreB);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String scoreA = savedInstanceState.getString("teamA_score");
+        String scoreB = savedInstanceState.getString("teamB_score");
+
+        Log.i(TAG,"onRestoreInstanceState");
+        ((TextView)findViewById(R.id.score)).setText(scoreA);
+        ((TextView)findViewById(R.id.score2)).setText(scoreB);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG,"onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG,"onResume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(TAG,"onRestart");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(TAG,"onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG,"onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG,"onDestory");
+    }
+
     public void btnAdd1(View btn){
         if(btn.getId()==R.id.btn1){
             showscore(1);

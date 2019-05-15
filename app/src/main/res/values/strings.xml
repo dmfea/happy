@@ -13,4 +13,6 @@
     <string name="dollar">dollar</string>
     <string name="euro">euro</string>
     <string name="won">won</string>
+    <string name="lable_open_list">OpenList</string>
+    <string name="menu_set_lable">Settings</string>
 </resources>
