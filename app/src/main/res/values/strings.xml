@@ -13,6 +13,9 @@
     <string name="dollar">dollar</string>
     <string name="euro">euro</string>
     <string name="won">won</string>
-    <string name="lable_open_list">OpenList</string>
-    <string name="menu_set_lable">Settings</string>
+    <string name="lable_open_list" translatable="false">OpenList</string>
+    <string name="menu_set_lable" translatable="false">Settings</string>
+    <string name="rdo_home_lable1" translatable="false">首页</string>
+    <string name="rdo_func_lable1" translatable="false">功能</string>
+    <string name="rdo_setting_lable1" translatable="false">设置</string>
 </resources>
